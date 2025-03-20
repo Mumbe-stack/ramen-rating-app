@@ -8,12 +8,13 @@ const ramens = [
     { id: 4, name: "Nirvana Ramen", restaurant: "Menya", image: "dishes /nirvana.jpg", rating: 4.8, comment: "Good dinning experience!" },
     { id: 5, name: "Shoyu Ramen", restaurant: "Menya", image: "dishes /shoyu.jpg", rating: 4.5, comment: "Beautiful presentation!" },
  ];
- console.log(ramens);
+
 
  
  const ramenMenu = document.getElementById("ramen-menu");
- const ramenDetail = document.getElementById("ramens"); //
+ const ramenDetail = document.getElementById("ramens");
  const ramenForm = document.getElementById("new-ramen-form");
+ 
  
 
  function displayRamens() {
@@ -28,9 +29,8 @@ const ramens = [
  }
  
 
- function handleClick(ramen) {
-     console.log("Display details for:", ramen.treat);
- 
+ function handleClick(ramen) { 
+
      document.getElementById("ramen-name").textContent = ramen.name;
      document.getElementById("ramen-image").src = ramen.image;
      document.getElementById("ramen-restaurant").textContent = "Restaurant: " + ramen.restaurant;
@@ -52,7 +52,7 @@ const ramens = [
          
          if (!name || !restaurant || !image || !rating || !comment) {
              alert("!Please fill out this field.");
-             return;
+             return NewRamen;
          }
  
          
