@@ -5,7 +5,7 @@
 # Features
 - Display of ramen dishes with images.
 - Click event to view ramen details.
-- submission form to add a new ramen dish.
+- Submission form to add a new ramen dish.
 - Prevents empty form submission by having all fields as required.
 - Updates the ramen menu when a new ramen is submitted.
 
